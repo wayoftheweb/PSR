@@ -1,0 +1,84 @@
+<html>
+<head>
+<style>
+.rps {
+margin:10px 30px;
+width:55px;
+height:55px;
+color:black;
+font-weight:bold;
+border-radius:5px;
+}
+
+body {
+font-family: Arial, Arial Black;
+font-weight: bold;
+background: rgb(235,241,246); /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  rgba(235,241,246,1) 0%, rgba(160,169,188,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(235,241,246,1)), color-stop(100%,rgba(160,169,188,1))); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(235,241,246,1) 0%,rgba(160,169,188,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  rgba(235,241,246,1) 0%,rgba(160,169,188,1) 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  rgba(235,241,246,1) 0%,rgba(160,169,188,1) 100%); /* IE10+ */
+background: radial-gradient(ellipse at center,  rgba(235,241,246,1) 0%,rgba(160,169,188,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebf1f6', endColorstr='#a0a9bc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+.showscore {
+background-color:#F1F1F1;
+border-radius:5px;
+padding: 10px 20px 20px 20px;
+margin-top:20px;
+
+}
+
+#winner button{
+
+background-color:#006AFF;
+color:white;
+border-radius:20px;
+font-size:20px;
+font-weight:bold;
+margin:5px;
+padding:5px 10px 5px 10px;
+
+}
+
+</style>
+
+<script src = "javascript.js"> </script>
+</head>
+
+
+<body>
+
+<div style="width:800px;margin: 0 auto;text-align:center" class="header"><h1>Paper Scissors Rock!</h1>
+<div id="promptbox">
+<p>Please Select one of the three options below to play.</p>
+</div>
+</div>
+
+
+<div style="width:600px;margin:0 auto" id="container">
+<div style="width:auto;margin:0 auto">
+	<div style="width:360px;margin:0 auto">
+	<button class="rps" id="paper" style="background-image:url(paper.gif)" onclick = "setTimeout('paper()', 500);" ></button>
+	<button class="rps" id="scissors" style="background-image:url(scissors.gif)" onclick = "setTimeout('scissors()', 500);"></button>
+	<button class="rps" id="rock" style="background-image:url(rock.gif)" onclick ="setTimeout('rock()', 500);"></button>
+	</div>
+<div style="height:80px" id="results">
+
+</div>
+
+<div id="winner">
+
+</div>
+<div id="score">
+
+</div>
+
+</div>
+</div><!--end. container-->
+</body>
+
+</html>
